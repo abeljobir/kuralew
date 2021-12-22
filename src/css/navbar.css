@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  font-family: "Lobster";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root {
+  --primaryLightColor: #d4e6a5;
+  --primaryColor: #4e1e48;
+  --primaryDarkColor: #c02c03;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBackground: #e1e5e7;
+  --mainOverlay: rgba(35, 10, 36, 0.4);
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.3rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/* 
+centering all elements
+*/
+
+/* 
+nav bar style */
+.nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr;
+  padding: 0.5rem 0.5rem;
+  box-shadow: 0px 0px 3px 0px rgba(97, 84, 84, 0.5);
+  width: 100vw;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(211, 211, 211)
+  );
+  position: fixed;
+  top: 0;
+  z-index: 42;
+}
+.barsimg {
+  display: flex;
+  flex: 1;
+}
+.bar1 {
+  animation: bar-animation 2s infinite;
+  color: rgb(5, 111, 141);
+}
+
+.nav-img {
+  height: 2.3rem;
+  margin-right: auto;
+}
+
+.nav-img img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.nav-links {
+  margin-right: 5rem;
+  margin-right: 1rem;
+}
+.nav-search input[type="text"],
+select,
+textarea {
+  width: 11rem;
+  padding: 7px;
+  border: 2px solid rgb(57, 160, 185);
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(211, 211, 211)
+  );
+}
+.nav-search label {
+  display: inline;
+}
+.ccategory {
+  position: relative;
+}
+.searchicon {
+  position: absolute;
+  top: 0.02rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  height: auto;
+  color: rgb(24, 103, 134);
+}
+
+/* vav links */
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  flex: 1;
+}
+.nav-btn {
+  position: relative;
+  background-image: linear-gradient(to right, rgb(4, 142, 160), rgb(3, 73, 94));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  display: flex;
+  flex: 1;
+}
+.nav-btn1 {
+  position: relative;
+  background-image: linear-gradient(to right, rgb(4, 142, 160), rgb(3, 73, 94));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  display: flex;
+  flex: 1;
+}
+.cart-icon {
+  position: relative;
+  top: 0.2rem;
+  left: 0.5 rem;
+  margin-left: 0.2rem;
+  color: rgb(24, 103, 134);
+}
+.nav-line {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 2px;
+  background-color: rgb(24, 103, 134);
+}
+.nav-line1 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 2px;
+  background-color: rgb(24, 103, 134);
+}
+/* key frames */
+
+@media screen and (min-width: 900px) {
+  .bar {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .nav-search input[type="text"],
+  select,
+  textarea {
+    width: 35rem;
+    padding: 12px;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+  .nav-btn {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bar {
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+  }
+  .nav-btn {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+  }
+  .nav-btn1 {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    margin-right: 1.5rem;
+  }
+  .nav-img {
+    padding-top: 0.5rem;
+  }
+  .cart-icon {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .nav-search input[type="text"],
+  select,
+  textarea {
+    width: 7rem;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  .nav-links {
+    margin-right: 1rem;
+  }
+  .nav-img {
+    height: 1.6rem;
+    margin-right: auto;
+  }
+  .nav-btn,
+  .nav-btn1 {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+  }
+  .cart-icon {
+    bottom: 5rem;
+    top: 0;
+  }
+  .icon {
+    margin-top: 3px;
+    margin-right: -10px;
+    font-size: 18px;
+  }
+}
+/* animations  */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .nav-img {
+    animation: logo-animation infinite 20s;
+    animation-timing-function: ease-out;
+    animation-delay: 3000sec;
+  }}
+  
+  @keyframes logo-animation {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotatey(360deg);
+  }
+}*/
+@keyframes bar-animation {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}

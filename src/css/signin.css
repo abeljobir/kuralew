@@ -1,0 +1,253 @@
+.signin {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 50vw;
+  margin-top: 3rem;
+  background-color: rgb(233, 233, 233);
+}
+.quot {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-top: -3rem;
+}
+.kuralew {
+  width: 22vw;
+  height: 9vw;
+}
+.sentence {
+  background-image: linear-gradient(to right, rgb(4, 142, 160), rgb(3, 73, 94));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.sform {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+
+  border: 8px solid rgb(92, 92, 92);
+  margin-left: -5rem;
+  background-color: rgb(255, 255, 255);
+}
+.sform1 {
+  position: relative;
+  top: 3vw;
+  left: 3vw;
+}
+.lemail,
+.lpassword {
+  display: block;
+  font-size: 1.1rem;
+  background-image: linear-gradient(to right, rgb(4, 142, 160), rgb(3, 73, 94));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.iemail {
+  width: 24vw;
+  height: 4vh;
+  margin-bottom: 1rem;
+  border-color: rgb(0, 153, 255);
+  box-shadow: 1px 2px 2px 3px rgba(47, 211, 240, 0.5);
+}
+.ipassword {
+  width: 24vw;
+  height: 4vh;
+  border-color: rgb(0, 153, 255);
+  box-shadow: 1px 2px 2px 3px rgba(47, 211, 240, 0.5);
+}
+.signinbtn {
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  transform: translate(-50%, 65%);
+  padding: 8px 135px;
+  border-radius: 20px;
+  border: 4px solid rgb(4, 123, 202);
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: rgb(4, 123, 202);
+}
+.signinbtn:hover {
+  background-color: rgb(33, 76, 133);
+  border: 4px solid rgb(174, 192, 204);
+  color: wheat;
+}
+.line {
+  position: relative;
+  top: 10vw;
+  left: 10vw;
+}
+.line::before {
+  display: inline;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-100%, -50%);
+  width: 10vw;
+  height: 0.1vw;
+  content: "";
+  background-color: black;
+}
+.line::after {
+  display: inline;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 11vw;
+  height: 0.1vw;
+  content: "";
+  background-color: black;
+}
+.signinbtn1 {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, 65%);
+  padding: 8px 80px;
+  border-radius: 10px;
+  border: 2px solid rgb(4, 189, 202);
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: rgb(4, 179, 202);
+}
+.signinbtn1:hover {
+  background-color: rgb(132, 202, 214);
+  border: 4px solid rgb(132, 202, 214);
+  color: wheat;
+}
+@media screen and (max-width: 1095px) {
+  .signinbtn {
+    padding: 4px 80px;
+  }
+  .signinbtn1 {
+    padding: 4px 50px;
+    margin-top: 1.5rem;
+  }
+  .line::after {
+    left: 55%;
+    width: 8vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .signin {
+    grid-template-columns: 100vw;
+    grid-template-rows: 50vw 50vw;
+  }
+  .sform {
+    height: 45vw;
+    margin-left: -1rem;
+    margin-top: -5rem;
+  }
+  .iemail {
+    width: 48vw;
+    height: 4vh;
+  }
+  .ipassword {
+    width: 48vw;
+    height: 4vh;
+  }
+  .line {
+    position: relative;
+    top: 15vw;
+    left: 25vw;
+  }
+  .line::before {
+    top: 50%;
+    left: 0%;
+    transform: translate(-120%, -50%);
+    width: 20vw;
+    height: 0.1vw;
+  }
+  .line::after {
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    height: 0.1vw;
+  }
+  .signinbtn {
+    left: 45%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .sform {
+    height: 60vw;
+    margin-left: -1rem;
+    margin-top: -2rem;
+  }
+  .signinbtn {
+    padding: 8px 70px;
+  }
+  .signinbtn1 {
+    padding: 8px 40px;
+  }
+  .line::before {
+    top: 50%;
+    left: 0%;
+    transform: translate(-105%, -50%);
+    width: 17vw;
+    height: 0.1vw;
+  }
+  .line::after {
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 17vw;
+    height: 0.1vw;
+  }
+  .line {
+    left: 19vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .signin {
+    grid-template-columns: 100vw;
+    grid-template-rows: 70vw 70vw;
+  }
+  .sform {
+    height: 75vw;
+  }
+  .line {
+    margin-top: 1rem;
+    left: 25%;
+  }
+  .line::before {
+    transform: translate(-105%, -50%);
+    width: 14vw;
+  }
+  .line::after {
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+  }
+}
+.eclass {
+  display: none;
+  color: red;
+  font-size: 1rem;
+}
+.showeclass {
+  display: block;
+}
